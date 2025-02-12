@@ -7,7 +7,7 @@
     <title>Exlusive Content - Buzz</title>
 
     <!-- Basic Open Graph Properties -->
-    <meta property="og:title" content="Change test">
+    <meta property="og:title" content="Change test Again">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://kute.in/">
     <meta property="og:image" content="https://musfiq.me/cssandjs/landing/images/2.jpeg">
@@ -83,11 +83,17 @@
     <meta name="robots" content="index, follow">
     <meta name="keywords" content="Exclusive Contents, Duckist, Buzz">
     <meta name="description" content="Access premium exclusive content. Click to explore now!">
+
+    <!-- Cache Control -->
+    <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, proxy-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
 </head>
+
 <body>
     <script>
         function checkExpiration() {
-            const expirationDate = "2025-02-11";
+            const expirationDate = "2025-02-12";
             const today = new Date().toISOString().split("T")[0];
 
             if (today > expirationDate) {
@@ -108,4 +114,5 @@
         window.onload = checkExpiration;
     </script>
 </body>
+
 </html>
